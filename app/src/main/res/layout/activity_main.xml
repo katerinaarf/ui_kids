@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    >
+
+    <!-- Button at top right -->
+
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_settings"
+        android:onClick="onSettingsButtonClick"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        >
+
+        <!-- App Icon 1 -->
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Gallery"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_gallery" />
+
+            <TextView
+                android:id="@+id/appTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery" />
+        </LinearLayout>
+
+        <!-- App Icon 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Painting"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_painting" />
+
+            <TextView
+                android:id="@+id/appTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Painting" />
+        </LinearLayout>
+
+        <!-- App Icon 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Music"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_music" />
+
+            <TextView
+                android:id="@+id/appTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music" />
+        </LinearLayout>
+
+
+        <!-- App Icon 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Phone"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                android:id="@+id/appTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone" />
+        </LinearLayout>
+
+        <!-- App Icon 5 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Games"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_games" />
+
+            <TextView
+                android:id="@+id/appTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Games" />
+        </LinearLayout>
+
+        <!-- App Icon 6 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Camera"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                android:id="@+id/appTitle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

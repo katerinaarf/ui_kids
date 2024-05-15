@@ -1,0 +1,58 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/buttonendcall"
+        android:layout_width="107dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/end_call"
+        android:tint="#750202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toEndOf="@+id/buttonvolumeup"
+        app:layout_constraintTop_toTopOf="@+id/buttonvolumeup" />
+
+    <Button
+        android:id="@+id/buttonvolumeup"
+        android:layout_width="112dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/volume_up"
+        android:tint="#0E0808"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_name"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="281dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="229dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#673AB7"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contact_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

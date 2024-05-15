@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:textSize="27dp"
+        android:text="New Contact"
+        android:textColor="#000000"
+        android:gravity="center_horizontal|center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#bab6b6"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"></LinearLayout>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:id="@+id/input_name"
+            android:hint="Luke Skywalker"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="Number"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"></LinearLayout>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:minLines="1"
+            android:singleLine="true"
+            android:imeOptions="flagNoExtractUi"
+            android:id="@+id/input_number"
+            android:hint="6900000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal|center_vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/male"
+                    android:textColor="#000000"
+                    android:singleLine="true"/>
+                <LinearLayout android:layout_width="12dp" android:layout_height="match_parent"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female"
+                    android:text="Female"
+                    android:textColor="#000000"
+                    android:singleLine="true"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal|center_vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/cancel" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:id="@+id/save" />
+
+
+    </LinearLayout>
+</LinearLayout>
