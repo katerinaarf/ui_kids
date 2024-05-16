@@ -22,14 +22,12 @@ public class Contacts extends Activity {
     ArrayList<Button> buttons = new ArrayList<Button>();
     Context myContext;
     private Button button;
-    private Button addcontact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts);
 
-        addcontact = findViewById(R.id.add_contact);
         button = findViewById(R.id.homebutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,13 +36,6 @@ public class Contacts extends Activity {
             }
         });
 
-        addcontact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent add = new Intent(Contacts.this, Default.class);
-                startActivity(add);
-            }
-        });
 
         ArrayList<Settings.Contact> contacts = Settings.getContacts();
         for (int i = 0; i < contacts.size(); i++) {

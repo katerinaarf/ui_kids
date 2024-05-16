@@ -15,7 +15,6 @@
         android:layout_height="86dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/end_call"
-        android:tint="#750202"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toEndOf="@+id/buttonvolumeup"
@@ -28,7 +27,6 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/volume_up"
-        android:tint="#0E0808"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_name"
@@ -42,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/contact_name"

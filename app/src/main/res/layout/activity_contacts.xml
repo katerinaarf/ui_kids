@@ -8,12 +8,6 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/add_contact"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="-142dp"
-        android:background="@drawable/add"/>
 
     <GridLayout
         android:id="@+id/gridLayout"

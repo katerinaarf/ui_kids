@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,8 @@ public class Call extends Activity {
 
     private Button buttonendcall;
     private Button buttonvolumeup;
+
+    private MediaPlayer tap;
 
 
 
@@ -50,12 +53,27 @@ public class Call extends Activity {
 
         buttonvolumeup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent volumeup = new Intent(Call.this, CameraSelfie.class);
-                startActivity(volumeup);
+            public void onClick(View view) {
+                clickSound();
             }
         });
 
 
+    }
+
+    private void clickSound() {
+        if (tap == null) {
+            tap = MediaPlayer.create(this, R.raw.tap);
+        }
+        tap.start();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (tap != null) {
+            tap.release();
+            tap = null;
+        }
     }
 }
