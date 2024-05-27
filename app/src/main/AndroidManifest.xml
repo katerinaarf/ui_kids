@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Comment out the following line if not necessary -->
+    <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" /> -->
 
-<!--    <uses-feature-->
-<!--        android:name="android.hardware.telephony"-->
-<!--        android:required="false"/>-->
-<!--    <uses-permission android:name="android.permission.CALL_PHONE"/>-->
+    <queries>
+        <package android:name="com.google.android.apps.youtube.kids" />
+        <package android:name="com.adsk.sketchbook" />
+        <package android:name="com.n3twork.tetris" />
+        <package android:name="linkdesks.jigsaw.puzzle.classic" />
+        <package android:name="air.com.hypah.io.slither" />
+    </queries>
 
 
 
