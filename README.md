@@ -8,5 +8,8 @@ Video
 
 Report
 
-Katerina Arfani
-Maria Kontaratou 
+
+
+## Η ομάδα του KidsUi  :
+- **[Katerina Arfani](https://github.com/katerinaarf)** 
+- **[Maria Kontaratou](https://github.com/mkontaratou)** 
