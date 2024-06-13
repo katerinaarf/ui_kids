@@ -4,9 +4,9 @@
 
 User Interface for kids :)
 
-Video
+- **[Video](https://www.youtube.com/watch?v=I2BLXaLycQI&ab_channel=KaterinaArfani)**
 
-Report
+- **[Report](https://github.com/katerinaarf/ui_kids/blob/latest/3200010_3200078_report.pdf)**
 
 
 
